@@ -1,7 +1,10 @@
-var valorInicial = 3;
-var valorRaiz = 3;
-var resultado = pars(valorInicial);
+var valorInicial = parseInt(prompt('Digite o valor Inicial: '));
+var valorRaiz = parseInt(prompt('Digite o valor da raiz: '));
+
+var soma = valorInicial;
+var resultado = valorInicial.toString();
 for (i = 1; i <= 10; i++) {
-  resultado += ',' + valorInicial + valorRaiz * i;
+  soma += valorRaiz;
+  resultado += ',' + soma;
 }
-console.log(resultado);
+alert('A PA é: ' + resultado);
