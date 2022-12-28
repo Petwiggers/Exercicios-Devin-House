@@ -8,6 +8,7 @@ for (var i = 1; i <= 1000; i++) {
   }
   if (contador == 2) {
     primos++;
+    console.log(i);
   }
   contador = 0;
 }
