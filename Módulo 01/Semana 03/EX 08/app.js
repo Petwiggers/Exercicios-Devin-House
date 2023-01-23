@@ -1,8 +1,23 @@
+/*
 const uneDobraRetorna = (vetor, ...resto) => {
   for (let i = 0; i < resto.length; i++) {
     resto[i] *= 2;
   }
   const concatenacao = [...vetor, ...resto];
+  return concatenacao;
+};
+*/
+
+const uneDobraRetorna = (vetor, ...resto) => {
+  /* const dobrado = []
+  for (let i = 0; i < resto.length; i++) {
+    dobrado.push(resto[i] *= 2);
+  }
+*/
+  //alternativa com map (ele é parecido com o ForEach)
+  const dobrado = resto.map((num) => num * 2);
+  //console.log(dobrado);
+  const concatenacao = [...vetor, ...dobrado];
   return concatenacao;
 };
 
