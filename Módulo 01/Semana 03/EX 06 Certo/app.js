@@ -1,21 +1,21 @@
 //Minha resolução
-/*
+
 function verificaPalindromo(palavra) {
   const [...letras] = palavra;
+
   let palavraDoAvesso = '';
-  for (let i = letras.length; i >= 0; i--) {
+  for (let i = letras.length - 1; i >= 0; i--) {
     palavraDoAvesso += letras[i];
   }
   if (palavra === palavraDoAvesso) {
-    console.log(true);
+    return true;
   } else {
-    console.log(false);
+    return false;
   }
 }
-*/
 
 //Minha copia
-
+/*
 const verificaPalindromo = (texto) => {
   const meio = texto.length / 2;
   const fim = texto.length - 1;
@@ -26,7 +26,7 @@ const verificaPalindromo = (texto) => {
   }
   return true;
 };
-
+*/
 //Professor
 /*
 function verificaPalindromo(texto) {
