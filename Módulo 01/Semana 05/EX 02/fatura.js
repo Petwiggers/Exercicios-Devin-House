@@ -24,4 +24,8 @@ export default class Fatura {
   obterValorTotal() {
     return this.quantia * this.preco;
   }
+
+  get ValorTotal() {
+    return this.quantia * this.preco;
+  }
 }
