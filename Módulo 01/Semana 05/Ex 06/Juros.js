@@ -10,10 +10,13 @@ export default class Juros {
 
   calcularJurosSimples() {
     let montante = this.capitalInicial;
-    return (montante += this.capitalInicial * this.taxaAplicada * this.tempo);
+    return Math.round((montante += this.capitalInicial * this.taxaAplicada * this.tempo));
   }
 
   calcularJurosCompostos() {
-    return this.capitalInicial * (1 + this.taxaAplicada) ** this.tempo;
+    //Math.floor arredonda pra baixo
+    //Match.round arredonda para o mais proximo
+    //Match.ceil arredonda para cima
+    return Math.round(this.capitalInicial * (1 + this.taxaAplicada) ** this.tempo);
   }
 }
