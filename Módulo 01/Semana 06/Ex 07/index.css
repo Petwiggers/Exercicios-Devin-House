@@ -1,0 +1,16 @@
+.lista{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap ;
+}
+
+.itemLista{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #0b0505;
+  border-radius: 5px;
+  background-color: #e1d1d1;
+  align-items: center;
+}
